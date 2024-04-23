@@ -1,4 +1,79 @@
 /* */
-.element{
-    background-color: rgb(255,0,0);
-}
+
+body {
+    background-color: rgb(209, 232, 239);
+  }
+  
+  h1 {
+    color: rgb(0, 128, 68);
+    margin-left: 10px;
+  }
+
+  h2 {
+    color: blue;
+    margin-left: 10px;
+  }
+
+  h3 {
+    color: #e90482;
+    margin-left: 10px;
+  }
+
+
+  section {
+    color: hsl(0, 5%, 4%);
+    margin-left: 10px;
+  }
+  
+
+  p {
+    color: color(display-p3 1 1 0);
+    margin-left: 10px;
+  }
+
+  label{
+    color: color-mix(in srgb, #b0e1ec 50%, rgb(79, 3, 3));
+    margin-left: 20px;
+  }
+  :root {
+    --main-bg-color: rgb(239, 168, 168);
+  }
+  /*combined to tasks together from the lab*/
+  details {
+    background-color: var(--main-bg-color);
+  }
+  /*here i used the variable with the fallback*/
+  details {
+    background-color: var(--main-bg-color, rgb(97, 105, 45));
+  }
+
+
+   /* units of measurement for sizing and spacing your elements */
+   /*Use 3 unique relative units total */
+  h1 {
+    font-size: 1.5em;
+  }
+  
+  p {
+    width: 50vw;
+  }
+  
+  section {
+    width: 20rem;
+  }
+
+  /**Use 3 unique absolute units total */
+
+  footer {
+    width: 2in;
+  }
+
+  h2{
+    width: 1cm;
+  }
+
+  h3{
+    font-size: 25px;
+  }
+  
+  
