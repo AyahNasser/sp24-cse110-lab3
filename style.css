@@ -7,28 +7,35 @@ body {
   h1 {
     color: rgb(0, 128, 68);
     margin-left: 10px;
+    margin-right: 20in;
+    margin-top: 10px;
+    margin-bottom: 10px
   }
 
   h2 {
     color: blue;
-    margin-left: 10px;
+    margin: 100px 10px 20px 30px;
   }
 
   h3 {
     color: #e90482;
-    margin-left: 10px;
+    margin: auto;
   }
 
 
   section {
     color: hsl(0, 5%, 4%);
-    margin-left: 10px;
+    padding-left: 40px;
+    padding-right: 10px;
+    padding-top: 30px;
+    padding-bottom: 12px;
   }
   
-
+  /*here i use the short padding*/
   p {
     color: color(display-p3 1 1 0);
-    margin-left: 10px;
+    padding: 10px 10px 20px 30px;
+
   }
 
   label{
