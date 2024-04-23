@@ -5,25 +5,79 @@ body {
   }
   
   h1 {
-    color: rgb(0, 128, 68);
+    /*using sidpplay inline*/
+    display:inline;
     margin-left: 10px;
-    margin-right: 20in;
+    margin-right: 200in;
     margin-top: 10px;
-    margin-bottom: 10px
+    margin-bottom: 10px;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: rgb(10, 139, 186);
+    border-width: 10px;
+    color: rgb(246, 71, 182);
+    
   }
 
   h2 {
     color: blue;
+    display: inline;
+    /*thelast display is the one performed, so it will block the inline*/
+    display: inline-block;
+    text-decoration: underline;
+    text-align: start;
     margin: 100px 10px 20px 30px;
+    height: 1in;
+    width: 1in;
+    position: static;
+    
+  }
+  button:hover {
+    color: rgb(215, 2, 2);
   }
 
+  h2:active{
+    color: pink;
+  }
+  h2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+
+  h3{
+    display: grid;
+    grid-area: span;
+    grid-template-columns: min-content;
+    
+  }
+
+  @media (max-width: 1250px) {
+    /* … */
+    section{
+        font-size: large;
+        
+    }
+  }
+  
+
+
+
   h3 {
+
     color: #e90482;
     margin: auto;
+    max-width: 100in;
+    max-height: 10cm;
+    position: relative;
+
+
   }
 
 
   section {
+
     color: hsl(0, 5%, 4%);
     padding-left: 40px;
     padding-right: 10px;
