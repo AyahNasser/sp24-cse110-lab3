@@ -185,4 +185,13 @@ h3 ~ p{
   background-color: rgb(255, 72, 0);
 }
 
+h3+p{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/*Combining Two Selectors (element.class)*/
+h3.Descendant{
+  color: black;
+}
+
 
