@@ -87,13 +87,13 @@ body {
   
   /*here i use the short padding*/
   p {
-    color: color(display-p3 1 1 0);
+    color: color(display-p3 1 0 0);
     padding: 10px 10px 20px 30px;
 
   }
 
   label{
-    color: color-mix(in srgb, #b0e1ec 50%, rgb(79, 3, 3));
+    color: color-mix(in srgb, blue 40%, rgb(220, 109, 109) 10);
     margin-left: 20px;
   }
   :root {
@@ -199,7 +199,7 @@ h5:has(+ p){
 
 }
 
-.Descendant{
+.classselector {
   &:last-child{
       background-color: #e90482;
   }
