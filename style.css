@@ -1,5 +1,6 @@
 /* */
 
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
 body {
     background-color: rgb(209, 232, 239);
   }
@@ -16,8 +17,10 @@ body {
     border-color: rgb(10, 139, 186);
     border-width: 10px;
     color: rgb(246, 71, 182);
+    font-family: 'Courier New', Courier, monospace;
     
   }
+  
 
   h2 {
     color: blue;
@@ -30,8 +33,10 @@ body {
     height: 1in;
     width: 1in;
     position: static;
-    
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
   }
+  /*Pseudo-class Selector*/
   button:hover {
     color: rgb(215, 2, 2);
   }
@@ -39,12 +44,7 @@ body {
   h2:active{
     color: pink;
   }
-  h2{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    
-  }
+  
 
   h3{
     display: grid;
@@ -56,7 +56,7 @@ body {
   @media (max-width: 1250px) {
     /* … */
     section{
-        font-size: large;
+        font-size: medium;
         
     }
   }
@@ -128,13 +128,83 @@ body {
   footer {
     width: 2in;
   }
-
+  /*Element Selector*/
   h2{
     width: 1cm;
   }
-
+ 
   h3{
     font-size: 25px;
   }
+
+
+
+  /*class selector*/
+  .classselector{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  }
+  /*id selector*/
+  #idselector{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+  
+ 
+  /*universal selector*/
+  *{
+    border-radius: 5ch;
+  }
+  /*Pseudo-class Selector*/
+  p:hover {
+    color: rgb(4, 81, 102);
+  }
+
+  /*Selector List*/
+  h3,h5,h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  /*Descendant Selector*/
+  .Descendant p {
+    color: #e90482;
+    font-size: larger;
+
+  }
+
+
+
+  /*Child Selector */
+  .Descendant > i {
+    line-height: 1cm;
+  }
+  /*class selector*/
+
+  h3 ~ p{
+    background-color: rgb(255, 72, 0);
+  }
+
+  h3+p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+  /*Combining Two Selectors (element.class)*/
+  h3.Descendant{
+    color: black;
+  }
+
+  h5:has(+ p){
+    color: rgb(200, 73, 34);
+
+  }
+
+  .Descendant{
+    &:last-child{
+        background-color: #e90482;
+    }
+
+  }
+
   
   
