@@ -174,5 +174,14 @@ body {
   }
 
 
+/*Child Selector */
+.Descendant > i {
+  line-height: 1cm;
+}
+/*class selector*/
 
-  
+h3 ~ p{
+  background-color: rgb(255, 72, 0);
+}
+
+
