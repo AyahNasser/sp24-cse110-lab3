@@ -194,6 +194,18 @@ h3.Descendant{
   color: black;
 }
 
+h5:has(+ p){
+  color: rgb(200, 73, 34);
+
+}
+
+.Descendant{
+  &:last-child{
+      background-color: #e90482;
+  }
+
+}
+
 
 
 
